@@ -1,38 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Page</title>
-    <style>
-        / *  Стилизация заголовка  * /
-        h1 {
-            font-size: 36px;
-            color: #333;
-        }
-
-        / *  Стилизация параграфа  * /
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 1em;
-        }
-
-        / *  Стили для ссылки  * /
-        a {
-            text-decoration: none;
-            color: blue;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV3</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Заголовок страницы</h1>
-    <p>Это простой параграф текста.</p>
-    <a href="https://www.youtube.com/watch?v=TiBCLraUFvA">Ссылка на пример сайта</a>
+
+<header>
+<section class="img" id="logo">
+    <div class="container l">
+        <div class="img__inner">
+
+            <div class="1__img">
+                <img class="1__img" src="p/1c.jpg" alt="my_photo" width="475">
+            </div>
+
+            <div class="img__title">
+                <div class="img__suptitle">Hi! My name is</div>
+                <h1>Nikitkov Kirill</h1>
+                <div class="img__subtitle">Front-End Developer</div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<nav> 
+    <div class="container">
+    <ul>
+        <li><a href="#logo" class="active">Home</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#code">Code</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#Language">Language</a></li>        
+        </ul>
+    </div> 
+</header>
+
+
+<main>
+<section id="contact">
+<h2>Contact Information</h2>
+<ul>
+<li>E-mail: fanta3900@mail.ru</li>
+<li>GH: <a href="https://github.com/OQ777">https://github.com/OQ777</a></li>
+</ul>
+</section>
+
+<section id="about">
+<h2>Briefly About Myself</h2>
+<p>In university, I studied microprocessor architecture, and basic C programming. This helped me develop an analytical mind, become attentive to details, and always take responsibility for my work. Some time ago I became interested in Frontend Development, I studied the basics of HTML, CSS and JavaScript on my own.</p>
+</section>
+
+<section id="skill">
+<h2>Skills</h2>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript (Basics)</li>
+<li>C (Basics)</li>
+</ul>
+</section>
+
+<section id="code">
+<h2>Code Example</h2>
+
+<pre>
+function addNumbers(a, b) {
+return a + b;
+}
+console.log("Сумма 2 и 3 равна:", addNumbers(2, 3));
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<ul>
+<li><strong>Ryazan Radio Engineering University</strong></li>
+<ul>
+<li>4 course</li>
+</ul>
+</ul>
+</section>
+
+<section id="Language">
+<h2>Languages</h2>
+<ul>
+<li>Russian (native speaker)</li>
+<li>English (A2)</li>
+</ul>
+</section>
+</main>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <a href="https://github.com/OQ777">
+                        <img src="p/2c.png" alt="github logo" width="200">
+                    </a>
+                </div>
+                <div class="footer__block">2024</div>
+                <div class="footer__block">
+                    <a href="https://rs.school/courses/javascript-ru">
+                        <img src="p/rs-school-logo.svg" alt="rs-school-logo" width="150">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
